@@ -11,7 +11,7 @@ none='\e[0m'
 [[ $(id -u) != 0 ]] && echo -e "\n 哎呀……请使用 ${red}root ${none}用户运行 ${yellow}~(^_^) ${none} \n" && exit 1
 
 cmd="apt-get"
-author=233boy
+author=Laev
 _ss_tmp_dir="/tmp/ss-tmp"
 _ss_tmp_file="/tmp/ss-tmp/shadowsocks-go"
 _ss_tmp_gz="/tmp/ss-tmp/shadowsocks-go.gz"
@@ -78,8 +78,8 @@ shadowsocks_password_config() {
 	echo
 	while :; do
 		# echo -e "请输入 "$yellow"Shadowsocks"$none" 密码"
-		read -p "$(echo -e "请输入$yellow Shadowsocks $none密码...(默认密码: ${cyan}233blog.com$none)"): " sspass
-		[ -z "$sspass" ] && sspass="233blog.com"
+		read -p "$(echo -e "请输入$yellow Shadowsocks $none密码...(默认密码: ${cyan}laev.club$none)"): " sspass
+		[ -z "$sspass" ] && sspass="laev.club"
 		case $sspass in
 		*[/$]*)
 			echo

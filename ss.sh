@@ -17,7 +17,7 @@ _cyan() { echo -e ${cyan}$*${none}; }
 [[ $(id -u) != 0 ]] && echo -e "\n 哎呀……请使用 ${red}root ${none}用户运行 ${yellow}~(^_^) ${none} \n" && exit 1
 
 cmd="apt-get"
-author=233boy
+author=Laev
 _ss_tmp_dir="/tmp/ss-tmp"
 _ss_tmp_file="/tmp/ss-tmp/shadowsocks-go"
 _ss_tmp_gz="/tmp/ss-tmp/shadowsocks-go.gz"
